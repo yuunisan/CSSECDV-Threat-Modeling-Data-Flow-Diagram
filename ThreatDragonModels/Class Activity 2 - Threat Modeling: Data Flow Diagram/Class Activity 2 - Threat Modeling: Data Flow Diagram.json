@@ -570,7 +570,9 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [],
-              "containedElements": []
+              "containedElements": [
+                "6e8a846f-5cbf-4395-8145-0cc7ffbae736"
+              ]
             },
             "labels": [
               "Generic\nTrust Boundary"
@@ -1342,6 +1344,222 @@
               }
             },
             "zIndex": 14
+          },
+          {
+            "position": {
+              "x": -97.50000000000003,
+              "y": -40
+            },
+            "size": {
+              "width": 220,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "CORRECTION: Browser Client is \nan Actor not a Process"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "6aaf8d1d-6824-4ad9-bb76-ec7f205a13ed",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Text",
+              "name": "CORRECTION: Browser Client is \nan Actor not a Process",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 764,
+              "y": -40
+            },
+            "size": {
+              "width": 220,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "CORRECTION: SQL Database\nis a Store not a Process"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "680b5491-cb69-432f-ae97-d5a6ea2d4ace",
+            "data": {
+              "type": "tm.Text",
+              "name": "CORRECTION: SQL Database\nis a Store not a Process",
+              "hasOpenThreats": false
+            },
+            "zIndex": 16
+          },
+          {
+            "position": {
+              "x": 840,
+              "y": -390
+            },
+            "size": {
+              "width": 220,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "CORRECTION: LDAP is\na Store not a Process"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "c8171daa-7d43-4c31-bbf1-a49afa9abc6a",
+            "data": {
+              "type": "tm.Text",
+              "name": "CORRECTION: LDAP is\na Store not a Process",
+              "hasOpenThreats": false
+            },
+            "zIndex": 17
+          },
+          {
+            "position": {
+              "x": 345,
+              "y": -390
+            },
+            "size": {
+              "width": 220,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "CORRECTION: Authorization\nProvider is an Actor not a Process"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "4ec45dde-8e40-45b3-be4d-71f731f26bd9",
+            "data": {
+              "type": "tm.Text",
+              "name": "CORRECTION: Authorization\nProvider is an Actor not a Process",
+              "hasOpenThreats": false
+            },
+            "zIndex": 18
+          },
+          {
+            "position": {
+              "x": 287.5,
+              "y": -280
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Spoofing"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "6e8a846f-5cbf-4395-8145-0cc7ffbae736",
+            "zIndex": 19,
+            "data": {
+              "type": "tm.Text",
+              "name": "Spoofing",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 817.75,
+              "y": -245
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Data Tampering using\nSQL Injection Attack"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "2a429819-e0c4-432a-8905-c4b764152822",
+            "data": {
+              "type": "tm.Text",
+              "name": "Data Tampering using\nSQL Injection Attack",
+              "hasOpenThreats": false
+            },
+            "zIndex": 20
+          },
+          {
+            "position": {
+              "x": 817.75,
+              "y": 120
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Data Tampering using\nSQL Injection Attack"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "7f3f8761-5838-4836-83e3-f99e67ce40f9",
+            "data": {
+              "type": "tm.Text",
+              "name": "Data Tampering using\nSQL Injection Attack",
+              "hasOpenThreats": false
+            },
+            "zIndex": 21
+          },
+          {
+            "position": {
+              "x": 398.75,
+              "y": 130
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Spoofing"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "5974983c-50b4-4848-9c60-3a1257623be4",
+            "data": {
+              "type": "tm.Text",
+              "name": "Spoofing",
+              "hasOpenThreats": false
+            },
+            "zIndex": 22
+          },
+          {
+            "position": {
+              "x": -43.75000000000003,
+              "y": 130
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Spoofing"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "dd52271a-83e1-43d7-8e7b-22980014af48",
+            "data": {
+              "type": "tm.Text",
+              "name": "Spoofing",
+              "hasOpenThreats": false
+            },
+            "zIndex": 23
           }
         ]
       }
