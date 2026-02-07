@@ -2,24 +2,24 @@
   "version": "2.5.0",
   "summary": {
     "title": "Class Activity 2 - Threat Modeling: Data Flow Diagram",
-    "owner": "",
-    "description": "",
+    "owner": "Ryu Unisan",
+    "description": "Activity Objectives\nIdentify DFD syntax and logic errors\nApply correct modeling standards\n\nInstruction\nUse OWASP Threat Dragon to recreate the reference data flow diagram.\n\nTasks:\nUse the appropriate symbols for each element.\nCorrect any errors present in the reference diagram.\nNote: Threats and Scores/Priority Levels are not included in this activity.",
     "id": 0
   },
   "detail": {
     "contributors": [],
     "diagrams": [
       {
-        "id": 1,
-        "title": "New STRIDE diagram",
-        "diagramType": "STRIDE",
-        "placeholder": "New STRIDE diagram description",
-        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "id": 3,
+        "title": "Sample Diagram",
+        "diagramType": "Generic",
+        "placeholder": "New generic diagram description",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
         "version": "2.5.0",
         "cells": []
       }
     ],
-    "diagramTop": 3,
+    "diagramTop": 4,
     "reviewer": "",
     "threatTop": 0
   }
