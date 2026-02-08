@@ -137,11 +137,11 @@
               "threats": [
                 {
                   "id": "eea704dd-0f65-4e83-bd9a-af02ef76e3f3",
-                  "title": "STRIDE Threat",
+                  "title": "Web Application Spoofing",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
-                  "description": "Provide a description for this threat",
+                  "description": "The web application may be spoofed by an attacker and this may lead to unauthorized access to the browser client.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -150,7 +150,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -208,58 +208,6 @@
               {
                 "x": 240,
                 "y": 0
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Insert Feedback Comments",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Insert Feedback Comments"
-            ],
-            "id": "429f0ac3-c341-44d4-b2f5-3357904bb963",
-            "source": {
-              "x": 100,
-              "y": 70
-            },
-            "target": {
-              "cell": "14e492e8-cff4-4d87-9fe5-c9af61020915",
-              "port": "b463335e-0691-4231-9064-aa564fb3888a"
-            },
-            "vertices": [
-              {
-                "x": 240,
-                "y": 50
               }
             ]
           },
@@ -782,6 +730,78 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Insert Feedback Comments",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "ca8ff47e-7eb8-4a78-a128-a4f08ca956f2",
+                  "title": "Feedback Data Tampering",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Data flowing across saved feedback comments may be tampered with by an attacker. Failure to verify that input is as expected is a root cause of a very large number of exploitable issues.",
+                  "mitigation": "Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved-list input validation approach.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Insert Feedback Comments"
+            ],
+            "id": "0794774b-e288-4554-83ea-70a4f2540a99",
+            "source": {
+              "cell": "f11f7707-3901-4a2a-8f8d-fe31de714459",
+              "port": "87c27450-bb42-4bf4-a2f2-fc458f566de3"
+            },
+            "target": {
+              "cell": "14e492e8-cff4-4d87-9fe5-c9af61020915",
+              "port": "b463335e-0691-4231-9064-aa564fb3888a"
+            },
+            "vertices": [
+              {
+                "x": 240,
+                "y": 50
+              }
+            ]
+          },
+          {
             "position": {
               "x": 814,
               "y": 45
@@ -907,21 +927,34 @@
               "threats": [
                 {
                   "id": "a1e5a901-983e-4ddf-a46b-65ba83747dc0",
-                  "title": "New STRIDE threat",
+                  "title": "Malicious SQL Code Injection",
                   "status": "Open",
-                  "severity": "Critical",
+                  "severity": "TBD",
                   "type": "Tampering",
-                  "description": "Provide a description for this threat",
+                  "description": "SQL injection is an attack in which malicious code is\ninserted into strings that are later passed to an instance of SQL Server \nfor parsing and execution.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 2,
                   "score": ""
+                },
+                {
+                  "id": "ebddb094-57c6-410d-b134-68f79f0c5190",
+                  "title": "Unverified SQL Database Data Writes",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "The SQL Database claims that it did not write data received from an entity on the other side of the trust boundary.",
+                  "mitigation": "Consider using logging or auditing to record the source, time and a summary of the received data.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
-                "repudiation": 0,
+                "tampering": 3,
+                "repudiation": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1323,11 +1356,11 @@
               "threats": [
                 {
                   "id": "a1e5a901-983e-4ddf-a46b-65ba83747dc0",
-                  "title": "New STRIDE threat",
+                  "title": "LDAP Injection",
                   "status": "Open",
-                  "severity": "Critical",
+                  "severity": "TBD",
                   "type": "Tampering",
-                  "description": "Provide a description for this threat",
+                  "description": "LDAP injection is possible, as the user authentication is verified using an LDAP query.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1336,7 +1369,7 @@
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0
@@ -1444,6 +1477,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 3
+    "threatTop": 5
   }
 }
