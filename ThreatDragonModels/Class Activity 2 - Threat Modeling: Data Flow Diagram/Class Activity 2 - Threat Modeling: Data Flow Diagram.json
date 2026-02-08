@@ -147,12 +147,25 @@
                   "new": false,
                   "number": 1,
                   "score": ""
+                },
+                {
+                  "id": "b139772a-c7e7-4d31-bd39-19834139a4d1",
+                  "title": "Missing Web Application Logging",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "The web application claims that it did not receive data from a process on the other side of the trust boundary.",
+                  "mitigation": "Consider using logging or auditing to record the source, time and a summary of the received data.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 2,
                 "tampering": 0,
-                "repudiation": 0,
+                "repudiation": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
@@ -762,7 +775,20 @@
               "protocol": "",
               "threats": [
                 {
-                  "id": "ca8ff47e-7eb8-4a78-a128-a4f08ca956f2",
+                  "id": "ac9bbbf2-6cf9-46a5-b7ca-05e4140c09b4",
+                  "title": "Sensitive Feedback Data Disclosure",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Data flowing across saved feedback comments may be sniffed by an attacker. Depending on what type of data an attacker can read, it may be used to attack other parts of the system or simply be a disclosure of information leading to compliance violations.",
+                  "mitigation": "Consider encrypting the data flow.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "55c271bd-c857-4866-8b32-e5064bbe3720",
                   "title": "Feedback Data Tampering",
                   "status": "Open",
                   "severity": "TBD",
@@ -771,21 +797,21 @@
                   "mitigation": "Consider all paths and the way they handle data. Verify that all input is verified for correctness using an approved-list input validation approach.",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 4,
+                  "number": 9,
                   "score": ""
                 }
               ],
               "trustBoundaryIds": [],
               "threatFrequency": {
                 "tampering": 1,
-                "informationDisclosure": 0,
+                "informationDisclosure": 1,
                 "denialOfService": 0
               }
             },
             "labels": [
               "Insert Feedback Comments"
             ],
-            "id": "0794774b-e288-4554-83ea-70a4f2540a99",
+            "id": "fbc1effa-3cd9-41da-8303-0bd4db43a988",
             "source": {
               "cell": "f11f7707-3901-4a2a-8f8d-fe31de714459",
               "port": "87c27450-bb42-4bf4-a2f2-fc458f566de3"
@@ -796,7 +822,7 @@
             },
             "vertices": [
               {
-                "x": 240,
+                "x": 250,
                 "y": 50
               }
             ]
@@ -1366,12 +1392,38 @@
                   "new": false,
                   "number": 2,
                   "score": ""
+                },
+                {
+                  "id": "21fe858b-99b8-4e73-aa70-addda5618df1",
+                  "title": "Missing LDAP Write Logging",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "LDAP claims that it did not write data received from an entity on the other side of the trust boundary.",
+                  "mitigation": "Consider using logging or auditing to record the source, time and a summary of the received data.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "516a9c9c-cac3-4ea5-a982-4802861b4cba",
+                  "title": "Unauthorized Data Access in LDAP Directory",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Improper data protection of LDAP can allow an\nattacker to read information not intended for disclosure.",
+                  "mitigation": "Review authorization settings",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 2,
-                "repudiation": 0,
-                "informationDisclosure": 0,
+                "repudiation": 1,
+                "informationDisclosure": 1,
                 "denialOfService": 0
               }
             }
@@ -1477,6 +1529,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "",
-    "threatTop": 5
+    "threatTop": 10
   }
 }
